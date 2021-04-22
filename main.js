@@ -2,6 +2,7 @@ function setup() {
     createCanvas(640, 480);
     video = createCapture(VIDEO)
     video.hide()
+    canvas.position(550, 250)
 }
 
 function draw() {
@@ -13,4 +14,8 @@ function draw() {
     circle(50, 430, 80);
     circle(590, 430, 80);
     image(video, 125, 50, 400, 425)
+}
+
+function take_snapshot() {
+    save("My_image.jpg");
 }
